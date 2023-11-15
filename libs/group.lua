@@ -49,7 +49,6 @@ local previous
             previous = body.data[1].created
         else
             if body.data[1].created == previous then
-                event:emit("NoPurchaseBought")
             elseif body.data[1].created ~= previous then
                 event:emit("purchaseBought", body.data[1])
                 previous = body.data[1].created
