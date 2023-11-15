@@ -1,0 +1,1 @@
+--this file gives info about a game
