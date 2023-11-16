@@ -8,4 +8,4 @@ Deps needed from lit are
 - creatonix/coro-http
 - luvit/secure-socket
 
-To use this, please refer to 
+To use this, please refer to the example folder
