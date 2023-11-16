@@ -3,7 +3,7 @@ local cookie = "insert your cookie here"
 rolua.cookie.setCookie(cookie)
 rolua.xcsrf.token()
 
-local groupInfo = rolua.group.getGroup("group id") --you must have the permission to manage the fund's group to acces this information
+local groupInfo = rolua.group.getGroup("group id") --will return info about the group
 local groupTransaction, event = rolua.group.getGroupTransaction("group id") --you must have the permission to manage the fund's group to acces this information
 p(groupInfo)
 p(groupTransaction)
