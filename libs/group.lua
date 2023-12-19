@@ -42,7 +42,7 @@ local ms = 3000
 local begin = false
 local previous
 	timer:start(ms, ms, function()
-    coroutine.wrap(function()
+    coroutine.wrap(function() --It will give out yeld errors if you aren't using coroutine.wrap()() for some reason, don't question it
         local success, res, body = HTTPRequest:callRobloxAPI("GET", "https://economy.roblox.com/v2/groups/" .. id .. "/transactions?transactionType=Sale&limit=10", nil, nil)
         if not begin then
              begin = true
