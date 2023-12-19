@@ -1,4 +1,4 @@
---nice function to make it easier to interact with the roblox api and handle the incoming data
+--nice function to make it easier to interact with the roblox api and handle the incoming data whilst taking care of the tokens
 local http = require("coro-http")
 local json = require("json")
 local HTTPRequest = {
