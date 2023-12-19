@@ -18,7 +18,7 @@ function rank.getRankID(rankName, groupID)
         end
     end
 end
-function rank.getRankValue(rankName, groupID)
+function rank.getRankValue(rankName, groupID) --this isn't really useful for ranks, it's more needed for another function in another file, so don't mind
     local success, res, body = HTTPRequest:callRobloxAPI("GET", "https://groups.roblox.com/v1/groups/"..groupID.."/roles", nil, nil)
     if not success then
         logger.error("failed to get rank's id: "..res.reason)
@@ -63,7 +63,6 @@ end
 function rank.setRank(userID, groupID, newRankName)
     local rankID = rank.getRankID(newRankName, groupID)
     local payload = json.encode({roleID = rankID})
-    p(payload)
     local succcess, res, body = HTTPRequest:callRobloxAPI("PATCH", "https://groups.roblox.com/v1/groups/"..groupID.."/users/"..userID, nil, payload)
     if res.reason == "OK" then
         return true
