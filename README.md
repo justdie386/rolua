@@ -1,3 +1,5 @@
+Before anyone asks, no this cannot be used from a roblox game, read below.
+
 This is a tool that allows you to interact with the roblox web api using https://luvit.io
 To use this, create a deps folder in your current directory, and run 
 ```
