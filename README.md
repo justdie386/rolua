@@ -9,3 +9,7 @@ Deps needed from lit are
 - luvit/secure-socket
 
 To use this, please refer to the example folder
+
+
+Please refer to the TODO for the list of features and other improvements that will be made
+The TODO list has been made in order of priority.
