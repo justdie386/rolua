@@ -4,4 +4,5 @@ rolua.cookie.setCookie(cookie)
 rolua.xcsrf.token()
 
 local shout = rolua.shout.getShout("group id")
+--will add onShout events soon.
 p(shout)
