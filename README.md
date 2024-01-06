@@ -2,12 +2,14 @@ Before anyone asks, no this cannot be used from a roblox game without changes, r
 
 This is a tool that allows you to interact with the roblox web api using https://luvit.io
 To use this, create a deps folder in your current directory, and run 
+
+This was made to heavely immitate discordia in the way it logs events, and handle errors, when a function fail, it will return the full error from the function, and it will log it in the terminal, so that it doesn't look out of place when using it with discordia (will be able to be turned off in another update)
 ```
 git clone https://github.com/justdie386/rolua
 ```
 Deps needed from lit are
 
-- creatonix/coro-http
+- creationix/coro-http
 - luvit/secure-socket
 
 To use this, please refer to the example folder
