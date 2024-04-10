@@ -28,6 +28,7 @@ end
     end
 end]] --currently seems to be broken, because noblox.js doesn't seem to support it either... (both the api v1/v2)
 
+--will probably never be implemented because its just useless as hell
 function wall.onWallPost()
 
 
