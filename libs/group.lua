@@ -45,14 +45,14 @@ local previous
     coroutine.wrap(function() --It will give out yeld errors if you aren't using coroutine.wrap()() for some reason, don't question it
         local success, res, body = HTTPRequest:callRobloxAPI("GET", "https://economy.roblox.com/v2/groups/" .. id .. "/transactions?transactionType=Sale&limit=10", nil, nil)
         if not begin then
-             begin = true
-            previous = body.data[1].created
+        	begin = true
+        	previous = body.data[1].created
         else
             if body.data[1].created == previous then
-            elseif body.data[1].created ~= previous then
-                event:emit("purchaseBought", body.data[1])
-                previous = body.data[1].created
-            end
+            	elseif body.data[1].created ~= previous then
+                	event:emit("purchaseBought", body.data[1])
+                	previous = body.data[1].created
+            	end
         end
     end)()
 end)
