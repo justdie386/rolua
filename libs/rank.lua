@@ -18,6 +18,7 @@ function rank.getRankID(rankName, groupID)
         end
     end
 end
+
 function rank.getRankValue(rankName, groupID) --this isn't really useful for ranks, it's more needed for another function in another file, so don't mind
     local success, res, body = HTTPRequest:callRobloxAPI("GET", "https://groups.roblox.com/v1/groups/"..groupID.."/roles", nil, nil)
     if not success then
