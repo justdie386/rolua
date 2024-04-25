@@ -1,6 +1,6 @@
 --handles everything related to group information and purchases
 local uv = require("uv")
-local event = require('core').Emitter
+local event = require("core").Emitter
 local HTTPRequest = require("http.lua")
 local logger = require("logger")
 local group = {}
