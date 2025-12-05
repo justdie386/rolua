@@ -11,5 +11,5 @@ local robuxAmount = rolua.group.getGroupRobux(groupID) --gets the current amount
 rolua.group.OnGroupTransaction(groupID, event) --listens to when a new purchase is made within the roblox group and its owned games
 
 event:on("PurchaseBought", function(data)
-    --print out the data to see what you need
+    p(data)
 end)
